@@ -18,10 +18,10 @@
 
 
   .tekstas{
-    width: 60%;
+    width: 100%;
 
-    margin-left: 150px;
-    
+    margin-left: 0px;
+
     text-align: left;
 
 
@@ -51,7 +51,7 @@
     }
 
     p{
-      padding: 30px 122px 20px 0;
+      padding: 30px 20px 20px 0;
       font-weight: bold;
       font-size: 16px;
 
@@ -212,7 +212,17 @@
 
     flex-direction: column;
     align-items: center;
-    height: 1100px;
+    // height: 1100px;
+
+  }
+  }
+@media (max-width: 400px) {
+
+  .tekstas{
+
+
+
+    // height: 1100px;
 
   }
 
