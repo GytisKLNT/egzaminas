@@ -1,0 +1,124 @@
+.customers{
+  width: 100%;
+
+  font-family: montserrat;
+
+h1{
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 65px;
+}
+
+.melynaLinija{
+
+  width: 64px;
+  height: 2px;
+  background: #6696E2;
+  margin: 30px auto;
+}
+
+.atsiliepimai{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+
+}
+
+.message{
+  width: 275px;
+  margin: 20px auto;
+
+
+  .tekstas, .tekstas1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #6696E2;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 15px;
+
+
+
+  }
+
+  .tekstas::before, .tekstas1::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    left: 10px;
+    top: 114px;
+    border-top: 20px solid #6696E2;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+
+  }
+
+  .tekstas1::before{
+    top: 57px;
+  }
+
+
+  .zmogus{
+    margin-top: 20px;
+    display: flex;
+
+    .avatar{
+      background: url(../images/avatar.png);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    .kasToks{
+      margin: 15px 20px;
+
+      .vardas{
+        font-size: 20px;
+      }
+      .profesija{
+        font-size: 14px;
+        color: #86878B;
+      }
+    }
+  }
+}
+
+}
+
+.swiper {
+  width: 100%;
+margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet{
+  background: white;
+  border: 1px solid #E27866;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active{
+
+  background: #E27866;
+  opacity: 1;
+
+}
+
+@media (max-width:1000px) {
+  .atsiliepimai{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
+
+  .tekstas::before, .tekstas1::before{
+    top: 193px;
+  }
+}

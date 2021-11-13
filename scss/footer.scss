@@ -1,0 +1,41 @@
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  background: black;
+  line-height: 120px;
+
+  .socialMedia{
+
+    margin-left: 20px;
+
+    i{
+      color: #E27866;
+      font-size: 20px;
+      margin: 0 40px;
+    }
+  }
+
+  p{
+    font-size: 18px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-right: 130px;
+
+    span{
+      font-size: 12px;
+    }
+  }
+}
+
+
+@media (max-width:800px) {
+  footer{
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+  }
+
+
+}

@@ -1,0 +1,91 @@
+.awesome{
+  width: 100%;
+
+  text-align: center;
+  font-family: montserrat;
+  padding: 50px;
+
+.why{
+  display: flex;
+  flex-direction: column;
+
+
+
+
+  h1{
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  .linija2{
+  width: 64px;
+  height: 2px;
+  background: #E27866;
+  margin:30px auto;
+
+}
+
+  p{
+    font-size: 14px;
+    color: #86878B;
+  }
+  }
+
+    .iconsaw{
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+
+    .design, .design1, .design2{
+      max-width: 300px;
+      margin: 80px 0;
+      display: flex;
+      flex-direction: column;
+
+      h5{
+        font-size: 20px;
+        margin: 20px 0;
+      }
+
+      p{
+        font-size: 14px;
+        color: #86878B;
+      }
+
+      .award, .spa, .visa{
+        width: 50px;
+        height: 50px;
+        border: solid 1px #E27866;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+
+        i{
+          position: absolute;
+          font-size: 25px;
+          top: 11px;
+          right: 9px;
+          color: #E27866;
+        }
+      }
+
+      .award{
+        i{
+          left: 9px;
+        }
+      }
+
+    }
+
+
+}
+
+@media (max-width:800px) {
+  .iconsaw{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

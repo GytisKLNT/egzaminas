@@ -1,0 +1,231 @@
+
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/miestas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  color: white;
+  margin-top: 68px;
+  font-family: montserrat;
+
+
+
+
+
+  .tekstas{
+    width: 60%;
+
+    margin-left: 150px;
+    
+    text-align: left;
+
+
+    .didLogo{
+      background: url(../images/logotipas.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-top: 66px;
+      width: 247px;
+      height: 108px;
+
+
+    }
+
+    h1{
+      font-size: 36px;
+      padding: 30px 0;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .line{
+      background: white;
+      width: 80px;
+      height: 2px;
+      border-radius: 5px;
+    }
+
+    p{
+      padding: 30px 122px 20px 0;
+      font-weight: bold;
+      font-size: 16px;
+
+    }
+    button{
+      width: 135px;
+      height: 42px;
+      text-transform: uppercase;
+      background: none;
+      color: white;
+      border: 2px solid white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover{
+
+      background: white;
+      color: black;
+    }
+}
+
+.trial{
+
+  background: white;
+  color: black;
+  width: 360px;
+
+  margin-top: 75px;
+  margin-right: 148px;
+  margin-left: 90px;
+  margin-bottom: 200px;
+  text-align: center;
+  border-radius: 5px;
+
+  .try{
+
+    background: #F5F5F5;
+    padding: 0 10px;
+    font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
+
+    h2{
+      font-size: 20px;
+      line-height: 57px;
+
+      .free{
+        text-transform: uppercase;
+        color: #E27866;
+      }
+    }
+  }
+
+  .details{
+    padding: 30px;
+    text-align: left;
+
+    h4{
+      padding: 10px 0;
+    }
+
+    input{
+      width: 100%;
+      margin: 5px 0;
+      padding: 5px 0;
+      border: none;
+      border-bottom: 1px solid #ebebeb;
+
+      }
+      input::placeholder{
+        color: #e1e1e1;
+    }
+  }
+
+  h4{
+    text-align: left;
+    padding: 0 30px;
+  }
+
+  .check{
+    display: flex;
+    text-align: left;
+    padding: 0 30px;
+    margin: 15px auto;
+
+    input[type="radio"]{
+
+      visibility: hidden;
+
+    }
+
+    label{
+      font-size: 9px;
+      margin-right: 15px;
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    input[type="radio"]:checked + label {
+      opacity: 1;
+    }
+
+    .radio{
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 2px solid #78f1bd;
+      cursor: pointer;
+
+    }
+
+    .radio:before{
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #78f1bd;
+      top: 1.5px;
+      left: 1.8px;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 0.2s;
+    }
+
+    input[type="radio"]:checked + label .radio:before {
+      transform:  scale(1);
+    }
+  }
+
+  button{
+
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    background: #78f1bd;
+    color: white;
+    margin-top: 0px;
+
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .get:hover{
+    background: #29bd7d;
+  }
+}
+
+
+}
+
+
+@media (max-width: 900px) {
+
+  .container{
+
+    flex-direction: column;
+    align-items: center;
+    height: 1100px;
+
+  }
+
+}
+
+@media (max-width: 1150px){
+  .trial{
+    margin-bottom: 150px !important;
+  }
+}
+
+@media (max-width: 1008px){
+  .trial{
+    margin-bottom: 100px !important;
+  }
+}

@@ -1,0 +1,197 @@
+.tabsai{
+  width: 100%;
+  display: flex;
+  background: url(../images/kalnai.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.tabs{
+
+display: flex;
+flex-direction: column;
+margin-left: 50px;
+margin-bottom: 150px;
+padding-top: 150px;
+
+  button{
+
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+    background: #A37169;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+
+
+
+    span{
+      display: inline-block;
+      transform: rotate(-45deg);
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+  }
+  button:hover , button:focus{
+    background: #E27866;
+
+    span{
+      opacity: 1;
+    }
+}
+}
+
+.tabs{
+  display: flex;
+
+
+  .txt{
+    text-align: left;
+    color: white;
+    font-family: montserrat;
+
+
+      h1{
+        font-size: 36px;
+
+      }
+
+      p{
+        font-size: 14px;
+
+        color: #ffffffa8;
+      }
+  }
+}
+
+.content{
+
+  display: none;
+
+  margin: 135px 75px;
+  transform: translateX(25px);
+  opacity: 0;
+  transition: 1s;
+
+
+.images{
+  width: 400px;
+  margin-left: 60px;
+
+.smallImage{
+  display: flex;
+}
+
+.image{
+  position: relative;
+    cursor: pointer;
+
+  img{
+    display: block;
+
+
+  }
+  .overlay{
+    position: absolute;
+    top: 6px;
+    bottom: 0;
+    left: 9px;
+    right: 0;
+    height: 168px;
+    width: 168px;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #E27866;
+  }
+  .image:hover, .overlay:hover{
+    opacity: 0.8;
+  }
+  .explore{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+  }
+}
+
+.image1{
+  position: relative;
+    cursor: pointer;
+
+
+  .overlay1{
+    position: absolute;
+    top: 6px;
+    bottom: 0;
+    left: 9px;
+    right: 0;
+    height: 178px;
+    width: 362px;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #E27866;
+  }
+  .image1:hover, .overlay1:hover{
+    opacity: 0.8;
+  }
+  .explore1{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+  }
+}
+
+}
+
+
+}
+
+.tabStyle1{
+  color: white;
+transform: translateY(0);
+opacity: 1;
+
+}
+
+@media (max-width:940px) {
+
+
+
+  .tabs{
+
+    flex-direction: row;
+    margin-bottom: 5px !important;
+
+  }
+
+  .tabsai{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+}
+
+@media (max-width: 675px) {
+  .content{
+    flex-direction: column;
+  }
+
+.txt  h1{
+    font-size: 20px;
+  }
+}
