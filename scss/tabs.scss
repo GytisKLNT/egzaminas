@@ -174,7 +174,7 @@ opacity: 1;
 
     flex-direction: row;
     margin-bottom: 5px !important;
-
+    margin-left: 0;
   }
 
   .tabsai{
@@ -193,5 +193,11 @@ opacity: 1;
 
 .txt  h1{
     font-size: 20px;
+  }
+
+  .smallImage{
+    display: flex;
+    flex-direction: column;
+
   }
 }
