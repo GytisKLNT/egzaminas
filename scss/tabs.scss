@@ -53,6 +53,7 @@ padding-top: 150px;
     text-align: left;
     color: white;
     font-family: montserrat;
+    margin: 20px;
 
 
       h1{
@@ -79,11 +80,12 @@ padding-top: 150px;
 
 
 .images{
-  width: 400px;
-  margin-left: 60px;
+  // width: 400px;
+  // margin-left: 60px;
 
 .smallImage{
   display: flex;
+
 }
 
 .image{
@@ -175,12 +177,15 @@ opacity: 1;
     flex-direction: row;
     margin-bottom: 5px !important;
     margin-left: 0;
+
+
   }
 
   .tabsai{
     flex-direction: column;
     align-items: center;
     padding: 20px;
+
   }
 
 
@@ -189,10 +194,14 @@ opacity: 1;
 @media (max-width: 675px) {
   .content{
     flex-direction: column;
+    margin: 10px 0;
   }
 
 .txt  h1{
     font-size: 20px;
+  }
+  .images{
+
   }
 
   .smallImage{
@@ -200,4 +209,6 @@ opacity: 1;
     flex-direction: column;
 
   }
+
+
 }
