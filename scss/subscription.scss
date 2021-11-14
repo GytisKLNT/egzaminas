@@ -19,7 +19,7 @@
 
   .tekstas{
     width: 100%;
-
+    padding-left: 20px;
   
 
     text-align: left;
@@ -212,21 +212,11 @@
 
     flex-direction: column;
     align-items: center;
-    // height: 1100px;
+    
 
   }
   }
-@media (max-width: 400px) {
 
-  .tekstas{
-
-
-
-    // height: 1100px;
-
-  }
-
-}
 
 @media (max-width: 1150px){
   .trial{
